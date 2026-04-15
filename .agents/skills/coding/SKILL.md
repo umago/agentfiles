@@ -1,5 +1,5 @@
 ---
-name: code-mode
+name: coding
 description: Strict coding guidelines biasing toward caution, precision, and minimalism. Use for all coding tasks to ensure clean, surgical changes.
 ---
 
