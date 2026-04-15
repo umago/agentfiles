@@ -22,7 +22,7 @@ description: Guidelines for analyzing an unfamiliar codebase. Prioritizes high-l
 * **Data Flow:** Briefly explain how a typical request or piece of data moves through the system from the entry point to the storage layer.
 * **Key Dependencies:** Highlight the most critical internal modules or external third-party services.
 
-## 4. Serve the Menu
+## 4. Handoff
 **Always end with targeted entry points for the user.**
 * **The Handoff:** Do not just dump information and stop. End your response by offering a numbered list of 3 to 4 specific areas of the codebase we can dive into next.
 * **Format:** Present these as simple, conversational options so the user can easily reply with a number.
