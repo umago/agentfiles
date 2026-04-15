@@ -3,9 +3,19 @@
 Dotfiles for AI assistants. A collection of skills, recipes, and behaviors
 for agentic workflows.
 
-> **Note:** These files are designed for use with [Goose](https://goose-docs.ai/). See the [Using Skills](https://goose-docs.ai/docs/guides/context-engineering/using-skills/) guide for details.
-
 Managed with [GNU Stow](https://www.gnu.org/software/stow/).
+
+## Skills
+
+These files are designed for use with Goose. See the [Using
+Skills](https://goose-docs.ai/docs/guides/context-engineering/using-skills/)
+guide for details.
+
+Skills are loaded on demand. Explicitly ask to use a skill, for example:
+
+```
+Apply the conding skill
+```
 
 ## Structure
 
