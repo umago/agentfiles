@@ -11,7 +11,7 @@ description: Conducts rigorous technical audits from a Senior Engineer perspecti
 * **Active State:** Proceed only once a specific codebase or logic block is identified.
 
 ## 2. Understand Intent & Context
-* **Requirement Alignment:** Cross-reference the changes against the Technical Design Doc (TDD) or feature goals.
+* **Requirement Alignment:** Cross-reference the changes against the System Design Doc (SDD) or feature goals.
 * **Surface Area:** Identify exactly which modules, APIs, or database schemas are being modified and evaluate the potential for regressions.
 
 ## 3. Correctness & Defensive Engineering

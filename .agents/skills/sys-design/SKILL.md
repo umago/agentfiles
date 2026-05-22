@@ -1,19 +1,19 @@
 ---
 name: sys-design
-description: Architect-level skill for generating a Technical Design Doc (TDD) intended as the primary input for coding agents and human review.
+description: Architect-level skill for generating a System Design Doc (SDD) intended as the primary input for coding agents and human review.
 ---
 
 > **Core Tradeoff:** Technical depth and risk mitigation are mandatory. Precision overrides brevity.
-> **Mission:** Produce a TDD detailed enough for coding agents to implement the feature without ambiguity and for a human to validate the architectural reasoning.
+> **Mission:** Produce a SDD detailed enough for coding agents to implement the feature without ambiguity and for a human to validate the architectural reasoning.
 
 ## 1. Deconstruct & Contextualize
 **Analyze the environment to eliminate ambiguity.**
 * **Stack Detection:** Identify languages, build systems, and data-layer tools. Adhere strictly to detected patterns.
 * **Logic Gaps:** If a requirement is vague, flag it in "Open Questions" rather than guessing.
-* **Template Flexibility:** If a section is not applicable (e.g., no API changes), the agent SHOULD omit that section entirely. This keeps the TDD focused and reduces noise for the implementation agent.
+* **Template Flexibility:** If a section is not applicable (e.g., no API changes), the agent SHOULD omit that section entirely. This keeps the SDD focused and reduces noise for the implementation agent.
 
 ## 2. Define the Interface & State
-**The TDD must provide the "Contract" for the coding agent.**
+**The SDD must provide the "Contract" for the coding agent.**
 * **Data Layer Definition:** Provide the schema in the project's native format (ORM models, SQL, JSON Schemas, or Protobuf).
 * **Type Safety:** Define exact types (e.g., `uint64`, `float32`, `string`) to prevent implementation ambiguity.
 * **Error Surface:** Explicitly list error codes and expected failure behaviors.
@@ -24,10 +24,10 @@ description: Architect-level skill for generating a Technical Design Doc (TDD) i
 * **Dependency Graph:** List exactly which existing files or modules the coding agent must modify or import.
 * **Edge Case Matrix:** Checklist of conditions to handle (e.g., null inputs, race conditions, timeouts).
 
-## 4. Generate the TDD (Agent-to-Agent Specification)
+## 4. Generate the SDD (Agent-to-Agent Specification)
 **Output the design using this strict format (Omit non-applicable sections):**
 ```markdown
-# [Feature Name] Technical Design Doc (TDD)
+# [Feature Name] System Design Doc (SDD)
 
 ## Overview
 [1-2 paragraph goal summary. Explicitly list "Non-Goals" to prevent over-engineering.]
@@ -65,4 +65,4 @@ description: Architect-level skill for generating a Technical Design Doc (TDD) i
 
 ## 5. Final Handoff
 **End with a numbered list of next steps.**
-*(Example: "How should we proceed? 1. Refine the logic in Section 5 | 2. Expand the Test Strategy | 3. Save TDD to a .md file")*
+*(Example: "How should we proceed? 1. Refine the logic in Section 5 | 2. Expand the Test Strategy | 3. Save SDD to a .md file")*
