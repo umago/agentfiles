@@ -22,8 +22,3 @@ description: Strict coding guidelines biasing toward caution, precision, and min
 * **Laser Focus:** Every changed line must trace directly to the prompt. Do not "improve" adjacent code, tweak formatting, or refactor working logic.
 * **Match Style:** Adopt the existing codebase style exactly.
 * **Targeted Cleanup:** Remove imports or variables orphaned by *your* changes. Flag - but do not delete - pre-existing dead code unless asked.
-
-## 4. Verify Every Step
-**Define success criteria. Loop until verified.**
-* **Test-Driven Action:** Transform tasks into verifiable goals (e.g., "Write a test that reproduces the bug → make it pass").
-* **Structured Planning:** Before executing multi-step tasks, output a numbered plan. Every single step must include both the action you will take AND the specific test or command you will use to verify it.
